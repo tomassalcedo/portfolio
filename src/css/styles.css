@@ -372,6 +372,12 @@ footer p {
 
 /* Responsive*/
 @media (max-width: 768px) {
+
+   
+    header nav{
+        display: flex;
+    }
+
     h1 {
         font-size: 2em;
     }
