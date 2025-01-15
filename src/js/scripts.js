@@ -1,4 +1,3 @@
-// Este archivo contiene el código JavaScript para agregar interactividad al portafolio.
 
 document.addEventListener('DOMContentLoaded', () => {
     const carousels = document.querySelectorAll('.proyecto-imagenes');
