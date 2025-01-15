@@ -1,0 +1,414 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: #ecf0f1; /* Texto claro */
+}
+
+header {
+    background: linear-gradient(90deg, #35424a, #4a5568);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd57;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background: #34495e; /* Fondo oscuro para las secciones */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Aumenta el ancho máximo del contenedor */
+    animation: fadeInUp 1s ease-in-out;
+    text-align: center; /* Centra el texto */
+}
+
+h2 {
+    font-size: 1.5em; /* Reduce el tamaño de la fuente */
+    margin-bottom: 40px; /* Añade más espacio debajo del título */
+}
+
+p, ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left; /* Alinea el texto a la izquierda dentro del contenedor centrado */
+    margin: 0 auto 20px auto; /* Centra el texto dentro del contenedor y añade espacio inferior */
+    max-width: 800px; /* Limita el ancho del texto para mejor legibilidad */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Añade espacio entre la imagen y el texto */
+    margin-top: 3rem;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 200px; /* Aumenta el tamaño de la imagen */
+    height: 200px; /* Aumenta el tamaño de la imagen */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    object-position: top; /* Ajusta la posición de la imagen para mostrar la cabeza completa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave */
+}
+
+.foto-perfil:hover {
+    transform: scale(1.1); /* Aplica un zoom del 10% al pasar el cursor */
+}
+
+.texto-sobre-mi {
+    flex: 1;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.nombre-destacado {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    color: transparent; /* Texto transparente */
+    -webkit-text-stroke: 1px #ffffff; /* Borde blanco */
+    
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the text is hidden until the animation starts */
+    border-right: .15em solid #ffffff; /* Creates the cursor effect */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Adds some spacing between the letters */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    display: inline-block; /* Ensures the width is only as wide as the text */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffff; }
+}
+
+.certificados {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente los botones */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en pantallas más pequeñas */
+}
+
+.boton-certificado {
+    background-color: #1abc9c;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Asegura que los botones se comporten como elementos en línea */
+}
+
+.boton-certificado:hover {
+    background-color: #16a085;
+}
+
+.boton-web {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px; /* Añade un margen superior */
+}
+
+.boton-web:hover {
+    background-color: #2980b9;
+}
+
+.proyectos-contenedor {
+    display: flex;
+    flex-direction: column; /* Alinea las tarjetas una debajo de la otra */
+    gap: 20px;
+    align-items: center; /* Centra las tarjetas horizontalmente */
+}
+
+.proyecto-card {
+    background: #34495e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px; /* Aumenta el ancho máximo de la tarjeta */
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave para el hover */
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+}
+
+.proyecto-imagenes {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px; /* Ajusta la altura del contenedor de imágenes */
+}
+
+.proyecto-imagenes .imagenes {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ajusta el ancho total para que las imágenes se alineen horizontalmente */
+}
+
+.proyecto-imagenes img {
+    width: 100%;
+    height: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+    flex: 1 0 100%; /* Cada imagen ocupa el 100% del contenedor */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Añade una transición suave para el hover */
+}
+
+.proyecto-imagenes img:hover {
+    transform: scale(1.05); /* Aplica un ligero zoom al pasar el cursor */
+    opacity: 0.9; /* Reduce ligeramente la opacidad al pasar el cursor */
+}
+
+.proyecto-imagenes .prev, .proyecto-imagenes .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.proyecto-imagenes .prev {
+    left: 10px;
+}
+
+.proyecto-imagenes .next {
+    right: 10px;
+}
+
+.proyecto-tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.proyecto-tecnologias img {
+    width: 60px; /* Ajusta el tamaño de las imágenes */
+    height: 60px; /* Ajusta el tamaño de las imágenes */
+    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+    padding: 5px; /* Añade un padding para que las imágenes no se recorten */
+    border-radius: 5px; /* Añade bordes redondeados para un diseño más uniforme */
+    transition: transform 0.3s ease; /* Añade una transición suave para el hover */
+}
+
+.proyecto-tecnologias img:hover {
+    transform: scale(1.1); /* Aplica un ligero zoom al pasar el cursor */
+}
+
+.proyecto-descripcion {
+    margin: 10px 0;
+    color: #ecf0f1; /* Color del texto */
+    font-size: 1em; /* Tamaño de la fuente */
+    line-height: 1.5; /* Altura de línea */
+}
+
+.boton-github {
+    background-color: #1abc9c;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px; /* Añade un margen superior */
+}
+
+.boton-github:hover {
+    background-color: #16a085;
+}
+
+#contacto {
+    padding: 40px 20px;
+    background: #34495e; /* Fondo oscuro para la sección de contacto */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; /* Ancho máximo de la sección */
+}
+
+#contacto h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ecf0f1; /* Color del texto */
+}
+
+.contacto-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #2c3e50; /* Fondo oscuro para los ítems de contacto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave para el hover */
+}
+
+.contacto-item:hover {
+    transform: translateY(-5px); /* Eleva el ítem al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+}
+
+.contacto-item img {
+    width: 30px; /* Tamaño del icono */
+    height: 30px; /* Tamaño del icono */
+}
+
+.contacto-item a {
+    color: #1abc9c; /* Color del enlace */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Añade una transición suave para el hover */
+}
+
+.contacto-item a:hover {
+    color: #16a085; /* Color del enlace al pasar el cursor */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, ul {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .sobre-mi-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-perfil {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .certificados {
+        flex-direction: column; /* Cambia la dirección de los botones a columna en pantallas pequeñas */
+        gap: 20px; /* Añade más espacio entre los botones en pantallas pequeñas */
+    }
+}
