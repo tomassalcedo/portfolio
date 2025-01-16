@@ -373,7 +373,12 @@ footer p {
 /* Responsive*/
 @media (max-width: 768px) {
 
-   
+  .typewriter {
+    font-size: 0.8rem;
+    width: 100%;
+    white-space: normal;
+  } 
+    
     header nav{
         display: flex;
     }
